@@ -1,0 +1,22 @@
+version: "3"
+services:
+
+    sql2017:
+      container_name: sql2017
+      build: 
+        context: ./sqldb
+        dockerfile: Dockerfile
+      ports:
+        - "1433:1433"
+      tty: true
+        
+      depends_on:
+        - web
+            
+    web:
+      build: .
+      container_name: webcore
+      ports:
+        - "8080:80"
+      environment: 
+        - ASPNETCORE_ENVIRONMENT=Development
