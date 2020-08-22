@@ -1,3 +1,3 @@
 # petstoreapp
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://raw.githubusercontent.com/link78/petstoreapp/master/PetSoreApp/azuredeploy.yaml)
+[![Deploy to Azure](https%3A%2F%2Fraw.githubusercontent.com%2Flink78%2Fpetstoreapp%2Fmaster%2FPetSoreApp%2Fazuredeploy.yaml)
