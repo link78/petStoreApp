@@ -50,9 +50,9 @@
   },
   "variables": {
     "hostingPlanName": "[concat('hostingplan', uniqueString(resourceGroup().id))]",
-    "webSiteName": "[concat('webSite', uniqueString(resourceGroup().id))]",
-    "sqlserverName": "[concat('sqlserver', uniqueString(resourceGroup().id))]",
-    "databaseName": "sampledb"
+    "webSiteName": "[concat('petsworldapp', uniqueString(resourceGroup().id))]",
+    "sqlserverName": "[concat('petsworldsql', uniqueString(resourceGroup().id))]",
+    "databaseName": "petsworlddb"
   },
   "resources": [
     {
