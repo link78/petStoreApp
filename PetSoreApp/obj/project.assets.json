@@ -7624,11 +7624,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\koand\\source\\repos\\PetSoreApp\\PetSoreApp\\PetSoreApp.csproj",
+      "projectUniqueName": "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
       "projectName": "PetSoreApp",
-      "projectPath": "C:\\Users\\koand\\source\\repos\\PetSoreApp\\PetSoreApp\\PetSoreApp.csproj",
+      "projectPath": "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
       "packagesPath": "C:\\Users\\koand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\koand\\source\\repos\\PetSoreApp\\PetSoreApp\\obj\\",
+      "outputPath": "C:\\azproject\\petstoreapp\\PetSoreApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

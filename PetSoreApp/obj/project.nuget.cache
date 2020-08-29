@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+BErhTPpcQvmckJ4nippww+s5Ck6LGhZxnY2a8Y+CJcWqLnwNv/E12QsuKriXc9djK6yHpM+pkMRvAjOHkag5w==",
+  "dgSpecHash": "bHWg25X1ucpPUunOFyuvcflSbVHwSZQOC5kev3KDYxbSyxu05rDfnvIp4PBIb9wZm99trBtKHqabdJyND0KGDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\koand\\source\\repos\\PetSoreApp\\PetSoreApp\\PetSoreApp.csproj",
+  "projectFilePath": "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
