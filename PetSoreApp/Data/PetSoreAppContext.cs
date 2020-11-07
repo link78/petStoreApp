@@ -12,7 +12,7 @@ namespace PetSoreApp.Data
         public PetSoreAppContext (DbContextOptions<PetSoreAppContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+           
         }
 
         public DbSet<PetSoreApp.Models.Owner> Owner { get; set; }

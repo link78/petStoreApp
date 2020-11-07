@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj": {}
+    "C:\\DevOps\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj": {}
   },
   "projects": {
-    "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj": {
+    "C:\\DevOps\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
+        "projectUniqueName": "C:\\DevOps\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
         "projectName": "PetSoreApp",
-        "projectPath": "C:\\azproject\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
+        "projectPath": "C:\\DevOps\\petstoreapp\\PetSoreApp\\PetSoreApp.csproj",
         "packagesPath": "C:\\Users\\koand\\.nuget\\packages\\",
-        "outputPath": "C:\\azproject\\petstoreapp\\PetSoreApp\\obj\\",
+        "outputPath": "C:\\DevOps\\petstoreapp\\PetSoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

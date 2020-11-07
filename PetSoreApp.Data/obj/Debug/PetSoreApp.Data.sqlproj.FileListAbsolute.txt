@@ -1,0 +1,6 @@
+C:\DevOps\petstoreapp\PetSoreApp.Data\bin\Debug\PetSoreApp.Data.dacpac
+C:\DevOps\petstoreapp\PetSoreApp.Data\bin\Debug\PetSoreApp.Data.dll
+C:\DevOps\petstoreapp\PetSoreApp.Data\bin\Debug\PetSoreApp.Data.pdb
+C:\DevOps\petstoreapp\PetSoreApp.Data\obj\Debug\PetSoreApp.Data.sqlprojAssemblyReference.cache
+C:\DevOps\petstoreapp\PetSoreApp.Data\obj\Debug\PetSoreApp.Data.dll
+C:\DevOps\petstoreapp\PetSoreApp.Data\obj\Debug\PetSoreApp.Data.pdb

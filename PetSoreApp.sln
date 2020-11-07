@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSoreApp", "PetSoreApp\Pe
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PetSoreApp.Data", "PetSoreApp.Data\PetSoreApp.Data.sqlproj", "{7A0A1D8D-F2EB-4893-BC24-0BE7CF9A2D98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSoreApp.Test", "PetSoreApp.Test\PetSoreApp.Test.csproj", "{5A65987E-9A89-4D45-9C00-CF2A9BE3A770}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{7A0A1D8D-F2EB-4893-BC24-0BE7CF9A2D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A0A1D8D-F2EB-4893-BC24-0BE7CF9A2D98}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A0A1D8D-F2EB-4893-BC24-0BE7CF9A2D98}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5A65987E-9A89-4D45-9C00-CF2A9BE3A770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A65987E-9A89-4D45-9C00-CF2A9BE3A770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A65987E-9A89-4D45-9C00-CF2A9BE3A770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A65987E-9A89-4D45-9C00-CF2A9BE3A770}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
