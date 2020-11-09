@@ -7,6 +7,7 @@ using OpenQA.Selenium.IE;
 using System.ComponentModel;
 using System.Threading;
 using OpenQA.Selenium.Interactions;
+using System;
 
 namespace PetSoreApp.Test
 {
@@ -15,75 +16,89 @@ namespace PetSoreApp.Test
     {
         private IWebDriver driver ;
         private string url;
-        
 
-        
         [TestMethod]
-        public void TestMethod1()
+        public void TestCreateOwner()
         {
-
-            driver.Navigate().GoToUrl(url + "autocomplete");
-
-       
-
-            driver.FindElement(By.Id("autocomplete")).SendKeys("7221 Greenwood Ct, Lincoln, Nebraska");
-
-            Thread.Sleep(500);
-
-            driver.FindElement(By.ClassName("pac-item")).Click();
-
-
-            
+            driver.Navigate().GoToUrl(url + "/Owners/Create");
+            driver.FindElement(By.Id("FirstName")).SendKeys("Louise");
+            driver.FindElement(By.Id("LastName")).SendKeys("Wiliamson");
+            driver.FindElement(By.CssSelector("input[id='email'")).SendKeys("williams.l@gmail.com");
+            driver.FindElement(By.CssSelector("#Photo")).SendKeys("yes");
+            driver.FindElement(By.Id("PhoneNumber")).SendKeys("402-005-1215");
+            driver.FindElement(By.CssSelector("input[value='Create'")).Click();
         }
 
 
         [TestMethod]
-        public void TestForm()
+        public void TestEditOwner()
         {
-
-            driver.Navigate().GoToUrl(url + "form");
-
-            driver.FindElement(By.Id("first-name")).SendKeys("kade");
-
-            driver.FindElement(By.Id("last-name")).SendKeys("abdul");
-
-            driver.FindElement(By.Id("job-title")).SendKeys("DevOps Engineer");
-
-            driver.FindElement(By.Id("radio-button-2")).Click();
-            
-            driver.FindElement(By.Id("checkbox-1")).Click();
-
-            driver.FindElement(By.CssSelector(".btn")).Click();
-
-
-     
-
-
-
+            driver.Navigate().GoToUrl(url + "/Owners/Edit/2");
+            driver.FindElement(By.Id("FirstName")).SendKeys("Johnny");
+            driver.FindElement(By.Id("LastName")).SendKeys("Chris");
+            driver.FindElement(By.CssSelector("input[id='email'")).SendKeys("jhonny_chris@yahoo.com");
+            driver.FindElement(By.CssSelector("#Photo")).SendKeys("none");
+            driver.FindElement(By.Id("PhoneNumber")).SendKeys("646-120-3030");
+            driver.FindElement(By.CssSelector("input[value='Save'")).Click();
         }
+
+        /**
+        [TestMethod]
+        public void TestDeleteOwner()
+        {
+            driver.Navigate().GoToUrl(url + "/Owners/Delete/4");
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.FindElement(By.CssSelector("input[value='Delete'")).Click();
+        }
+        **/
 
         [TestMethod]
-        public void TestDragBox()
+        public void TestCreatePet()
         {
-            driver.Navigate().GoToUrl(url + "dragdrop");
-
-            driver.FindElement(By.Id("image")).Click();
-
-            driver.FindElement(By.Id("box"));
-            Thread.Sleep(500);
-            Actions actions = new Actions(driver);
-            actions.DragAndDrop(driver.FindElement(By.Id("image")), driver.FindElement(By.Id("box"))).Build().Perform();
+            driver.Navigate().GoToUrl(url + "/Pets/Create");
+            driver.FindElement(By.Id("Name")).SendKeys("Wally");
+            driver.FindElement(By.Id("OwnerId")).Click();
+            driver.FindElement(By.CssSelector("option[value='7'")).Click();
+            driver.FindElement(By.CssSelector("#Age")).SendKeys("3");
+            driver.FindElement(By.Id("Picture")).SendKeys("yes");
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.FindElement(By.CssSelector("input[value='Create'")).Click();
         }
+
+
+        [TestMethod]
+        public void TestEditPet()
+        {
+            driver.Navigate().GoToUrl(url + "/Pets/Edit/2");
+            driver.FindElement(By.Id("Name")).SendKeys("Bumpy");
+            driver.FindElement(By.Id("OwnerId")).Click();
+            driver.FindElement(By.CssSelector("option[value='2'")).Click();
+            driver.FindElement(By.CssSelector("#Age")).SendKeys("2");
+            driver.FindElement(By.Id("Picture")).SendKeys("yes");
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.FindElement(By.CssSelector("input[value='Save'")).Click();
+        }
+
+        /**
+        [TestMethod]
+        public void TestDeletePet()
+        {
+            driver.Navigate().GoToUrl(url + "/Pets/Delete/1");
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver.FindElement(By.CssSelector("input[value='Delete'")).Click();
+        }  **/
+
+
 
         [TestInitialize()]
         public void SetupTest()
         {
-            url = "https://formy-project.herokuapp.com/";
+            url = "http://localhost:54117";
             string browser = "Chrome";
 
             switch (browser)
             {
-                
+
                 case "FireFox":
                     driver = new FirefoxDriver();
                     break;
@@ -102,7 +117,9 @@ namespace PetSoreApp.Test
         [TestCleanup()]
         public void MyTestCleanup()
         {
+            Thread.Sleep(2000);
             driver.Quit();
         }
     }
 }
+
